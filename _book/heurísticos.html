@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 4 3. HEURÍSTICOS | A Minimal Book Example</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 4 3. HEURÍSTICOS | A Minimal Book Example" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 4 3. HEURÍSTICOS | A Minimal Book Example" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="John Doe" />
+
+
+<meta name="date" content="2024-10-21" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="esquemas-sociales.html"/>
+<link rel="next" href="falacia-del-jugador-y-de-la-mano-caliente.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="#tema-2-cognici%C3%B3n-social"><i class="fa fa-check"></i><b>1</b> TEMA 2: COGNICIÓN SOCIAL</a></li>
+<li class="chapter" data-level="2" data-path="index.html"><a href="#procesamiento-autom%C3%A1tico-y-controlado-en-el-pensamiento-social"><i class="fa fa-check"></i><b>2</b> 1. PROCESAMIENTO AUTOMÁTICO Y CONTROLADO EN EL PENSAMIENTO SOCIAL</a></li>
+<li class="chapter" data-level="3" data-path="esquemas-sociales.html"><a href="esquemas-sociales.html"><i class="fa fa-check"></i><b>3</b> 2. ESQUEMAS SOCIALES</a></li>
+<li class="chapter" data-level="4" data-path="index.html"><a href="#heur%C3%ADsticos"><i class="fa fa-check"></i><b>4</b> 3. HEURÍSTICOS</a></li>
+<li class="chapter" data-level="5" data-path="falacia-del-jugador-y-de-la-mano-caliente.html"><a href="falacia-del-jugador-y-de-la-mano-caliente.html"><i class="fa fa-check"></i><b>5</b> 4. FALACIA DEL JUGADOR Y DE LA MANO CALIENTE</a></li>
+<li class="chapter" data-level="6" data-path="index.html"><a href="#relaci%C3%B3n-entre-el-afecto-y-la-cognici%C3%B3n"><i class="fa fa-check"></i><b>6</b> 5. RELACIÓN ENTRE EL AFECTO Y LA COGNICIÓN</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="heurísticos" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Capítulo 4</span> 3. HEURÍSTICOS<a href="#heur%C3%ADsticos" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>A parte de los esquemas, otra forma de reducir esfuerzo en el procesamiento de la información son los <strong>HEURÍSTICOS</strong>, una serie de reglas sencillas que usamos frecuentemente para <strong>hacer juicios</strong> y <strong>tomar decisiones</strong> sin consumir muchos recursos cognitivos (Tversky y Kahneman, 1974).</p>
+<p>Son atajos mentales que en la generalmente nos funcionan pero que a veces puede llevarnos a cometer <strong>errores</strong> lógicos, probabilísticos o racionales.</p>
+<ol style="list-style-type: decimal">
+<li>Heurístico de REPRESENTATIVIDAD</li>
+</ol>
+<p>Se trata de la juzgar la probabilidad de que un evento pertenezca a un determinado conjunto fijándonos en la <strong>similitud</strong> entre el suceso y la categoría. Se trata de un <strong>juicio de similaridad</strong> que lleva a sobrestimar la probabilidad de que algo (un evento) pertenezca a una categoría.</p>
+<p><em>“Steve es muy tímido e introvertido, siempre servicial, pero con poco interés por las personas del mundo real. Una persona tranquila y ordenada, que necesita del orden y de la estructura y con una gran pasión por el detalle.”</em> Se nos pregunta si Steve trabaja de granjero, actor,</p>
+<p>bibliotecario, buzo o cirujano.</p>
+<p>Para poder dar una respuesta rápida, nuestra estrategia será estimar el grado en que Steve es representativo o similar a una persona promedio de cada una de las categorías, y según ello hacemos el juicio a cerca de su trabajo. En este ejemplo sería bibliotecario, pues su descripción coincide con el estereotipo asociado a los bibliotecarios.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Heurístico de SIMULACIÓN</li>
+</ol>
+<p>Es un mecanismo que nos hace creer que es más probable que suceda algo únicamente porque es fácil imaginarlo.</p>
+<p>Lo utilizamos para:</p>
+<ul>
+<li><strong>predecir</strong> un hecho futuro</li>
+<li><strong>diagnosticar</strong> la probabilidad de un hecho específico</li>
+<li><strong>calcular</strong> las posibilidades de que ocurra algún suceso</li>
+</ul>
+<p>Este heurístico nos lleva a buscar alternativas a hechos o circunstancias pasadas o presentes sobre <em>qué podía haber ocurrido, si hubiésemos hecho algo diferente…</em> <strong><em>(¿Y si…)</em></strong> es un error cognitivo llamado <strong>pensamiento contrafáctico.</strong></p>
+<p>«Mr. Cane y Mr. Tees deben acudir al aeropuerto en vuelos diferentes, pero a la misma hora. Cuando acuden juntos al aeropuerto encuentran un atasco y llegan media hora después de la hora de salida de sus vuelos. A Mr. Crane se le informa que su vuelo salió a su hora. A Mr. Tees se le dice que el vuelo se retrasó y qua acababa de salir hace cinco minutos. ¿Quién está más enfadado?»</p>
+<ul>
+<li>Mr. Tees estará más molesto porque imaginamos que podría haber</li>
+</ul>
+<p>tomado su vuelo si el vuelo se hubiera retrasado un poco más, si el atasco hubiera durado un poco menos.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Heurístico de DISPONIBILIDAD</li>
+</ol>
+<p>Hace referencia a la tendencia que tenemos de proporcionar respuestas rápidas basadas en la <strong>facilidad con la que la información nos viene a la mente</strong> (está más accesible).</p>
+<p>Lo utilizamos para estimar:</p>
+<ul>
+<li>la <strong>probabilidad</strong> de un suceso</li>
+<li>la <strong>frecuencia</strong> de una categoría</li>
+<li>la <strong>aparición conjunta</strong> de dos fenómenos</li>
+</ul>
+<p>Si pensamos en el riesgo que supone viajar en coche o en avión, es probable que pensemos que el avión es más peligroso. A pesar de que se producen muchos menos accidentes, producen más impacto por sus características y están más accesibles. Sin embargo, las estadísticas el alto número de víctimas en la carretera.</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Heurístico de ANCLAJE Y AJUSTE</li>
+</ol>
+<p>Tendencia a reducir la ambigüedad tomando como referencia <strong>un punto de partida (ancla)</strong> al que nos ajustamos para la búsqueda de la solución final.</p>
+<p>Predecir el número de alumnos que habrá en una asignatura el año que viene tomando de referencia los alumnos matriculados este año.</p>
+<p>Es importante para los científicos sociales por las consecuencias que tienen en los <strong>estudios de opinión</strong>: cuando se responde una escala se es influido por los dos extremos de la escala y tendemos a responder en el punto intermedio, que este punto, además, se establece en función del tamaño de la escala (de 0 a 20 es menor que de 0 a 100).</p>
+<ol start="4" style="list-style-type: decimal">
+<li>ERRORES EN LA COGNICIÓN SOCIAL</li>
+</ol>
+<p>A pesar de la efectividad del uso de atajos mentales, usarlos también nos puede conducir a errores a la hora de procesar la información. Aunque los denominemos <em>“errores”</em>, esto no debe considerarse como un aspecto negativo, ya que <strong>estas tendencias de respuesta errónea resultan bastante</strong> <strong>adaptativas</strong> a la hora de dar respuesta a la complejidad del mundo social.</p>
+<p><strong>ERROR:</strong> uso es una equivocación puntual o circunstancial, normalmente asociada a la desviación de una</p>
+<p>determinada regla normativa</p>
+<p><strong>SESGO:</strong> es una tendencia sistemática a cometer una determinada distorsión.</p>
+<ol style="list-style-type: decimal">
+<li>EL PENSAMIENTO MÁGICO</li>
+</ol>
+<p>Se trata de las <strong>atribuciones de causalidad</strong> carentes de lógica (sin respaldo empírico) que realizamos cuando creemos que nuestros pensamientos pueden tener consecuencias en el mundo externo, ya</p>
+<p>sea por nuestra propia acción o por la intermediación de fuerzas paranormales.</p>
+<p>EXPERIMENTO “VUDÚ”</p>
+<p>Consistía en que el participante hiciese vudú a otra persona (un cómplice del experimentador) clavándole una serie de agujas. Existieron dos condiciones experimentales, en cada una el cómplice se comportaba de manera diferente:</p>
+<ul>
+<li>Detestable, para desagradar al participante: llegaba tarde, mascaba chicle con la boca abierta, tiraba papeles al suelo…</li>
+<li>Agradable y simpática</li>
+</ul>
+<p>Después, el experimentador le indicaba al participante que clavase agujas al muñeco y cuando comenzaba, el cómplice comenzaba a quejarse de dolor de cabeza.</p>
+<p>Objetivo: observar si los participantes percibían más controlabilidad en el caso “maleducado”.</p>
+<p>Resultado: En el caso maleducado, los participantes reales tendían a hacerse responsables de su dolor de cabeza.</p>
+<p>El haber pensado mal de la otra persona por su comportamiento inapropiado estaba relacionado con que posteriormente hubieran sentido dolor de cabeza.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>SESGO DE IMPACTO</li>
+</ol>
+<p>El sesgo de impacto hace referencia a la tendencia a sobrestimar la <strong>intensidad y duración</strong> que tendrán futuros eventos sobre nuestras emociones.</p>
+<p>El <strong>pronóstico afectivo</strong> son las predicciones que hacemos las personas sobre los sentimientos que tendremos en el futuro.</p>
+<p>Wilson y Gilbert, 2003: Este sesgo es un ejemplo de <strong>cómo las creencias pueden influir en el afecto.</strong> Según estos autores, los seres humanos somos poco precisos a la hora de imaginarnos nuestro futuro. De esta forma, <strong>los principales sesgos</strong> que cometemos <strong>tienen que ver con las siguientes dimensiones</strong>:</p>
+<ol style="list-style-type: decimal">
+<li>Errores de bulto sobre la <strong>valencia</strong>[^4] de nuestras futuras emociones.</li>
+<li>No tenemos claras las <strong>emociones específicas</strong> que sentiremos en el futuro: aunque podamos acertar la valencia de nuestros sentimientos (positivos o negativos), no podemos adivinar qué emociones concretas sentiremos.</li>
+<li>Errores a la hora de predecir la <strong>intensidad</strong> de las emociones que sentiremos.</li>
+<li>Errores al estimar la <strong>duración</strong> de nuestros futuros estados emocionales.</li>
+</ol>
+<p>EXPERIMENTO: VOTANTES HILARY CLINTON (Dorison et al., 2019)</p>
+<p>Se les pidió a los votantes de Hilary que se imaginaran como se sentirían después de oír el discurso de Trump en el que toma posesión de su cargo (pronóstico afectivo). Después de esa estimación, verían una grabación del discurso.</p>
+<p>Objetivo: comprobar si existe un sesgo comparando la predicción de sus emociones con las que realmente sintieron.</p>
+<p>Resultado: El pronóstico afectivo (del 0 al 8) fue una media de 4.08 y la emoción real fue 3.07, oír lo que: los participantes anticiparon niveles de afecto negativo mucho más elevados a los reales.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>SESGO DE PROYECCIÓN</li>
+</ol>
+<p>Se trata de la tendencia a usar nuestras vivencias del presente para predecir cómo creemos que será el futuro (Loewenstein et al., 2003).</p>
+<p>EJEMPLO: REGRESO AL FUTURO <strong>(Julie Beck para <em>The Atlantic</em>)</strong></p>
+<p>La escritora pone de ejemplo para este sesgo que, si la película se situaba en 2015 y en la cinta pudiésemos ver a gente usando el fax y cabinas de teléfono, hoy en día sabríamos que son objetos obsoletos, pero en el momento de escribir la</p>
+<p>película se predijo que seguirían existiendo. Basaron sus proyecciones sobre el futuro en el conocimiento de tecnología del momento</p>
+<p>presente.</p>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="esquemas-sociales.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="falacia-del-jugador-y-de-la-mano-caliente.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

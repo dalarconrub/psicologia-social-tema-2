@@ -1,0 +1,8 @@
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Capítulo "
+
+
+rmd_files:
+  - "index.Rmd"  # Introducción o índice
